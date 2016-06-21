@@ -30,6 +30,6 @@ gem install kramdown
 bundle exec jekyll serve
 ```
 
-...and then navigate to http://localhost:4000
+...and then navigate to http://localhost:4000/fsa-playbook-wip/
 
 If it's something else, reach out to me.

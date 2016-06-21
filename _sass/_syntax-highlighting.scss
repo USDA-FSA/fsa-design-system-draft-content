@@ -3,6 +3,11 @@
  */
 .highlight {
 
+    pre,
+    code {
+      color: inherit;
+    }
+
     .highlighter-rouge & {
       // background: #eef;
     }

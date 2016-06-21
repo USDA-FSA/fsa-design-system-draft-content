@@ -7,7 +7,7 @@ permalink: /content/
 <ul class="fsa-list--inline fsa-m-b--l">
   {% for post in site.categories.content %}
     {% if post.url %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>

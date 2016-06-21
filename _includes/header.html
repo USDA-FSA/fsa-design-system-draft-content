@@ -1,0 +1,44 @@
+<header>
+  <!--
+  <div class="usa-disclaimer docs__disclaimer">
+    <div class="docs__disclaimer__bd">
+      <span class="usa-disclaimer-official">
+        <img class="usa-flag_icon" alt="US flag signifying that this is a United States Federal Government website" src="http://usda-fsa.github.io/fsa-style/img/us_flag_small.png">
+        An official website of the United States Government
+      </span>
+      <span class="usa-disclaimer-stage docs__disclaimer__stage docs__disclaimer__stage--prototype">
+        <strong>PROTOTYPE</strong> Not ready for Production
+      </span>
+    </div>
+  </div>
+  <section class="docs__section docs__intro">
+    <nav class="docs__nav">
+      <ul class="docs__primary-nav fsa-m-b--xxs">
+      {% for section in site.sections %}
+      <li class="docs__primary-nav-item">
+        <a class="docs__primary-nav-link" href="{{ section.url | prepend: site.baseurl }}">{{ section.text }}</a>
+      </li>
+      {% endfor %}
+      </ul>
+    </nav>
+  </section>
+-->
+  <div class="docs__section docs__bd fsa-m-t--l fsa-m-b--l" style="border-bottom: 1px solid gray">
+    <ul>
+      {% for section in site.sections %}
+      <li>
+        <a href="{{ section.url | prepend: site.baseurl }}">{{ section.text }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</header>
+
+<!-- {% for my_page in site.pages %}
+{% if my_page.title %}
+<li class="docs__primary-nav-item">
+  <a class="docs__primary-nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+</li>
+{% endif %}
+{% endfor %} -->

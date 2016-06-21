@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="docs__page">
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+
+    {% include header.html %}
+
+    <main id="main-content">
+      <section class="docs__section">
+        <div class="docs__bd">
+          {{ content }}
+        </div>
+      </section>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

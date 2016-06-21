@@ -12,8 +12,22 @@ Initially a parking lot of **content** to be distributed among various eventual 
 
 Install local dependencies...
 
+(WIP: to be simplified right soon.)
+
 ```sh
 bundle install
+```
+
+...and then...
+
+```sh
+npm install
+```
+
+...and then...
+
+```sh
+grunt build
 ```
 
 ...and then...
@@ -22,7 +36,7 @@ bundle install
 npm start
 ```
 
-...and after  then navigate to http://localhost:4000
+...and then navigate to http://localhost:4000
 
 ### Troubleshooting
 
@@ -36,6 +50,6 @@ gem install kramdown
 npm start
 ```
 
-...and then navigate to http://localhost:4000/fsa-playbook-wip/
+...and then navigate to [http://localhost:4000/fsa-playbook-wip/](http://localhost:4000/fsa-playbook-wip/)
 
 If it's something else, reach out to me.

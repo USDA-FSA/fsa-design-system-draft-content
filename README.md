@@ -36,7 +36,7 @@ grunt build
 npm start
 ```
 
-...and then navigate to http://localhost:4000
+...and then navigate to [http://localhost:4000/fsa-playbook-wip/](http://localhost:4000/fsa-playbook-wip/)
 
 ### Troubleshooting
 

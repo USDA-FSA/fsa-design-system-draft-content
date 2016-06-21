@@ -41,7 +41,7 @@ sections:
     url: about
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown COMMENTING OUT AS IT'S THE DEFAULT PER github-pages
 
 # Ignore specific items from building
 exclude:

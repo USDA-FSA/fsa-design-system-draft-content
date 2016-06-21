@@ -30,6 +30,6 @@
     "fsa-style": "git://github.com/USDA-FSA/fsa-style.git#460bf7b"
   },
   "scripts": {
-    "start": "grunt"
+    "start": "bundle exec jekyll serve"
   }
 }

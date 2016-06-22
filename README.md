@@ -1,8 +1,10 @@
 ## About
 
-Initially a parking lot of **content** to be distributed among various eventual FSA Design System and Playbook sites.
+Initially a **parking lot of content** to be distributed among various eventual FSA Design System and Playbook sites.
 
 ## Minimum Environment Requirements
+
+At *least*:
 
 1. Ruby 2.2.3 +
 1. Node 0.12.0
@@ -10,46 +12,22 @@ Initially a parking lot of **content** to be distributed among various eventual 
 
 ## Building locally
 
-Install local dependencies...
+1. Open project in Command Line (e.g. Git Shell, CMDER, Terminal, etc):
 
-(WIP: to be simplified right soon.)
+  ```sh
+  cd path/to/fsa-playbook/wip
+  ```
 
-```sh
-bundle install
-```
+1. Get latest dependencies:
 
-...and then...
+  ```sh
+  npm run install-dep
+  ```
 
-```sh
-npm install
-```
+1. Build and watch for changes:
 
-...and then...
+  ```sh
+  npm start
+  ```
 
-```sh
-grunt build
-```
-
-...and then...
-
-```sh
-npm start
-```
-
-...and then navigate to [http://localhost:4000/fsa-playbook-wip/](http://localhost:4000/fsa-playbook-wip/)
-
-### Troubleshooting
-
-If you're getting weird "Kramdown" error messaging...
-```sh
-gem install kramdown
-```
-...and then try this again...
-
-```sh
-npm start
-```
-
-...and then navigate to [http://localhost:4000/fsa-playbook-wip/](http://localhost:4000/fsa-playbook-wip/)
-
-If it's something else, reach out to me.
+1. Viewable at [http://localhost:4000/fsa-playbook-wip/](http://localhost:4000/fsa-playbook-wip/)

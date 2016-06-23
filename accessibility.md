@@ -2,15 +2,8 @@
 layout: page
 title: Accessibility
 permalink: /accessibility/
+section: accessibility
 ---
-
-<ul class="fsa-list--inline fsa-m-b--l">
-  {% for post in site.categories.accessibility %}
-    {% if post.url %}
-        <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
 
 ## Introduction
 

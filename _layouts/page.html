@@ -7,6 +7,20 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
+  {% assign section = page.section %}
+
+  {% if page.section %}
+  <nav>
+    <ul class="fsa-list--inline fsa-m-b--l">
+      {% for post in site.categories.[section] %}
+        {% if post.url %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+
   <div class="post-content">
     {{ content }}
   </div>

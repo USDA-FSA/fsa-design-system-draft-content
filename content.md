@@ -2,15 +2,8 @@
 layout: page
 title: Content
 permalink: /content/
+section: content
 ---
-
-<ul class="fsa-list--inline fsa-m-b--l">
-  {% for post in site.categories.content %}
-    {% if post.url %}
-      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
 
 ## Introduction
 

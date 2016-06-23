@@ -49,3 +49,4 @@ exclude:
   - package.json
   - Gruntfile.js
   - README.md
+  - vendor

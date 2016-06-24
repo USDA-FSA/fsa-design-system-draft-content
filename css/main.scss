@@ -3,11 +3,18 @@
 ---
 @charset "utf-8";
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-
+// -----------------------------------------------------------------------------
 @import "fsa-style.scss";
 @import "fsa-style-docs.scss";
+// -----------------------------------------------------------------------------
+@import "components/playbook.nav" ;
+@import "components/playbook.nav.local" ;
 @import "syntax-highlighting" ;
+
+
+html:hover body::before {
+  display: none; // hide breakpoint bar
+}
 
 .post-content {
   // max-width: $text-max-width

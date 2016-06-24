@@ -14,11 +14,25 @@ module.exports = function (grunt) {
     // Copies templates and assets from dependencies and/or src
     copy: {
 
-      fsaStyle: {
+      fsaStyleSass: {
         expand: true,
         src: '**',
         cwd: 'node_modules/fsa-style/src/stylesheets',
         dest: '_sass'
+      },
+
+      fsaStyleImg: {
+        expand: true,
+        src: '**',
+        cwd: 'node_modules/fsa-style/src/img',
+        dest: 'img'
+      },
+
+      fsaStyleFonts: {
+        expand: true,
+        src: '**',
+        cwd: 'node_modules/fsa-style/src/fonts',
+        dest: 'fonts'
       },
 
     },
@@ -45,7 +59,7 @@ module.exports = function (grunt) {
         cwd: 'src/',
         ext: '.html',
         src: ['*.html'],
-        dest: 'dist/'
+        dest: '_site/'
       },
     },
 
@@ -54,7 +68,7 @@ module.exports = function (grunt) {
       options: {
         map: {
           inline: false, // save all sourcemaps as separate files...
-          annotation: 'dist/css' // ...to the specified directory
+          annotation: '_site/css' // ...to the specified directory
         },
         processors: [
           require('pixrem')(), // add fallbacks for rem units
@@ -73,7 +87,7 @@ module.exports = function (grunt) {
   // Register Tasks
   grunt.registerTask('default', ['build','watch']);
   grunt.registerTask('build', [
-    'copy:fsaStyle',
+    'copy',
   ]);
 
   grunt.registerTask('lint', 'scsslint');

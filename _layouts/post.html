@@ -5,6 +5,7 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <!--
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
       {% if page.author %}
@@ -14,7 +15,25 @@ layout: default
       </span>
       {% endif %}
     </p>
+    -->
   </header>
+
+
+  {% assign section = page.section %}
+
+  {% if page.section %}
+  <nav>
+    <div class="pb-nav-local">
+      <ul class="pb-nav-local__list">
+        {% for post in site.categories.[section] %}
+        {% if post.url %}
+        <li class="pb-nav-local__list-item"><a class="pb-nav-local__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+  {% endif %}
 
   <div class="post-content" itemprop="articleBody">
     {% if page.intro %}

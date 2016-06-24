@@ -1,24 +1,21 @@
 ---
 layout: default
 ---
-<article>
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/4@ml">
 
-  <div class="fsa-grid">
-    <div class="fsa-grid__1 fsa-grid__1/4@ml">
-      {% include nav-local.html %}
-    </div>
-    <div class="fsa-grid__1 fsa-grid__3/4@ml">
-      <header>
-        <h1>{{ page.title }}</h1>
-      </header>
+    {% include nav-local.html %}
 
-      <section>
-        {{ content }}
-      </section>
-    </div>
   </div>
+  <div class="fsa-grid__1 fsa-grid__3/4@ml">
 
+    <article>
 
+      <h1 class="pb-page-title">{{ page.title }}</h1>
 
+      {{ content }}
 
-</article>
+    </article>
+
+  </div>
+</div>

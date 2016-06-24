@@ -5,8 +5,8 @@
 
 // -----------------------------------------------------------------------------
 @import "fsa-style.scss";
-@import "fsa-style-docs.scss";
 // -----------------------------------------------------------------------------
+@import "core/playbook.layout" ;
 @import "components/playbook.nav" ;
 @import "components/playbook.nav.local" ;
 @import "syntax-highlighting" ;

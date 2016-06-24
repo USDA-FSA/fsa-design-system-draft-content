@@ -14,11 +14,25 @@ module.exports = function (grunt) {
     // Copies templates and assets from dependencies and/or src
     copy: {
 
-      fsaStyle: {
+      fsaStyleSass: {
         expand: true,
         src: '**',
         cwd: 'node_modules/fsa-style/src/stylesheets',
         dest: '_sass'
+      },
+
+      fsaStyleImg: {
+        expand: true,
+        src: '**',
+        cwd: 'node_modules/fsa-style/src/img',
+        dest: 'img'
+      },
+
+      fsaStyleFonts: {
+        expand: true,
+        src: '**',
+        cwd: 'node_modules/fsa-style/src/fonts',
+        dest: 'fonts'
       },
 
     },
@@ -73,7 +87,7 @@ module.exports = function (grunt) {
   // Register Tasks
   grunt.registerTask('default', ['build','watch']);
   grunt.registerTask('build', [
-    'copy:fsaStyle',
+    'copy',
   ]);
 
   grunt.registerTask('lint', 'scsslint');

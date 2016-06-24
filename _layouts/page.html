@@ -12,13 +12,15 @@ layout: default
 
   {% if page.section %}
   <nav>
-    <ul class="fsa-list--inline fsa-m-b--l">
-      {% for post in site.categories.[section] %}
+    <div class="pb-nav-local">
+      <ul class="pb-nav-local__list">
+        {% for post in site.categories.[section] %}
         {% if post.url %}
-          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        <li class="pb-nav-local__list-item"><a class="pb-nav-local__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
         {% endif %}
-      {% endfor %}
-    </ul>
+        {% endfor %}
+      </ul>
+    </div>
   </nav>
   {% endif %}
 

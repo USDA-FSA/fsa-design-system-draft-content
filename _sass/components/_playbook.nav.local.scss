@@ -1,0 +1,28 @@
+.pb-nav-local {
+
+  &__list {
+    @include reset-ul();
+  }
+
+  &__list-item {
+
+    @include reset-li();
+
+  }
+
+  &__link {
+
+    @include font-size(1);
+    color: $color-fsa-link;
+
+    @include breakpoint(MML) {
+      @include font-size(3);
+    }
+
+    &:visited {
+      color: $color-fsa-link;
+    }
+
+  }
+
+}

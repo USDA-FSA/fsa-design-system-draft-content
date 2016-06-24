@@ -9,6 +9,10 @@
 @import "fsa-style-docs.scss";
 @import "syntax-highlighting" ;
 
+html:hover body::before {
+  display: none; // hide breakpoint bar
+}
+
 .post-content {
   // max-width: $text-max-width
 }

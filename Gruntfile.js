@@ -59,7 +59,7 @@ module.exports = function (grunt) {
         cwd: 'src/',
         ext: '.html',
         src: ['*.html'],
-        dest: 'dist/'
+        dest: '_site/'
       },
     },
 
@@ -68,7 +68,7 @@ module.exports = function (grunt) {
       options: {
         map: {
           inline: false, // save all sourcemaps as separate files...
-          annotation: 'dist/css' // ...to the specified directory
+          annotation: '_site/css' // ...to the specified directory
         },
         processors: [
           require('pixrem')(), // add fallbacks for rem units

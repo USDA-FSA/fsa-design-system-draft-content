@@ -1,46 +1,24 @@
 ---
 layout: default
 ---
-<article class="fsa-longform post" itemscope itemtype="http://schema.org/BlogPosting">
+<article>
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <!--
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      {% if page.author %}
-      |
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">{{ page.author }}</span>
-      </span>
-      {% endif %}
-    </p>
-    -->
-  </header>
-
-
-  {% assign section = page.section %}
-
-  {% if page.section %}
-  <nav>
-    <div class="pb-nav-local">
-      <ul class="pb-nav-local__list">
-        {% for post in site.categories.[section] %}
-        {% if post.url %}
-        <li class="pb-nav-local__list-item"><a class="pb-nav-local__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-      </ul>
+  <div class="fsa-grid">
+    <div class="fsa-grid__1 fsa-grid__1/4@ml">
+      {% include nav-local.html %}
     </div>
-  </nav>
-  {% endif %}
+    <div class="fsa-grid__1 fsa-grid__3/4@ml">
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {% if page.intro %}
-    <p class="fsa-text--lead">{{ page.intro }}</p>
-    {% endif %}
-
-    {{ content }}
+      <section>
+        {{ content }}
+      </section>
+    </div>
   </div>
+
+
+
 
 </article>

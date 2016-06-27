@@ -3,6 +3,7 @@ layout: post
 title:  "Acronyms and abbreviations"
 date:   2016-06-21 10:23:36 -0500
 intro: "[intro paragraph]"
+section: content
 categories: content
 ---
 

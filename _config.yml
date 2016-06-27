@@ -37,9 +37,6 @@ sections:
   - text: Bar
     url: bar
 
-  - text: About
-    url: about
-
 # Build settings
 # markdown: kramdown COMMENTING OUT AS IT'S THE DEFAULT PER github-pages
 

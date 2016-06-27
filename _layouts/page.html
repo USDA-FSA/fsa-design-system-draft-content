@@ -1,32 +1,21 @@
 ---
 layout: default
 ---
-<article>
-  <header>
-    <div class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-    </div>
-  </header>
+<div class="fsa-grid">
+  <div class="fsa-grid__1 fsa-grid__1/4@ml">
 
-  {% assign section = page.section %}
+    {% include nav-local.html %}
 
-  {% if page.section %}
-  <nav>
-    <div class="pb-nav-local">
-      <ul class="pb-nav-local__list">
-        {% for post in site.categories.[section] %}
-        {% if post.url %}
-        <li class="pb-nav-local__list-item"><a class="pb-nav-local__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
-  {% endif %}
-
-  <div class="post-content">
-    {{ content }}
   </div>
+  <div class="fsa-grid__1 fsa-grid__3/4@ml">
 
+    <article>
 
-</article>
+      <h1 class="pb-page-title">{{ page.title }}</h1>
+
+      {{ content }}
+
+    </article>
+
+  </div>
+</div>

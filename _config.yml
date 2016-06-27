@@ -20,10 +20,28 @@ thing: yay
 permalink: none
 
 # Sections: effectively the top-level navigation
+navigation:
+
+ - title: Front Page
+   url: index.html
+
+ - title: Accessibility
+   url: accessibility
+
+ - title: Content
+   url: content
+
+ - title: Foo
+   url: foo
+
+ - title: Bar
+   url: bar
+
+# Sections: effectively the top-level navigation
 sections:
 
   - text: Front Page
-    url:
+    url: index.html
 
   - text: Accessibility
     url: accessibility

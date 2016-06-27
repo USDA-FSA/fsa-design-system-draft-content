@@ -15,9 +15,15 @@
   }
 
   &__list-item {
+
     @include reset-li();
     display: inline-block;
     margin-right: $size-default;
+
+    &--active {
+      outline: 1px solid $color-fsa-tertiary-300;
+      outline-offset: $size-base;
+    }
 
     &:last-child {
       margin-right: 0;

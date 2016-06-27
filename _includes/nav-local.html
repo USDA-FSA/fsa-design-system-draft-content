@@ -12,9 +12,7 @@
           {% assign localActiveClassName = 'pb-nav-local__list-item--active' %}
         {% endif %}
 
-        {% if post.url %}
-          <li class="pb-nav-local__list-item {{ localActiveClassName }}"><a class="pb-nav-local__link {{ localActiveClassName }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-        {% endif %}
+        <li class="pb-nav-local__list-item {{ localActiveClassName }}"><a class="pb-nav-local__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 
       {% endfor %}
     </ul>

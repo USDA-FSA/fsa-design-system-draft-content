@@ -5,9 +5,17 @@
   <div class="pb-nav-local">
     <ul class="pb-nav-local__list">
       {% for post in site.categories.[section] %}
-      {% if post.url %}
-      <li class="pb-nav-local__list-item"><a class="pb-nav-local__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-      {% endif %}
+
+        {% assign localActiveClassName = nil %}
+
+        {% if page.url contains post.url %}
+          {% assign localActiveClassName = 'pb-nav-local__list-item--active' %}
+        {% endif %}
+
+        {% if post.url %}
+          <li class="pb-nav-local__list-item {{ localActiveClassName }}"><a class="pb-nav-local__link {{ localActiveClassName }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        {% endif %}
+
       {% endfor %}
     </ul>
   </div>

@@ -3,9 +3,7 @@
 
   {% include head.html %}
 
-  <body>
-
-    <a class="skipnav" href="#main-content">Skip to main content</a>
+  <body class="{% if page.url == '/' %}pb-home{% endif %}">
 
     {% include header.html %}
 

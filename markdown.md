@@ -39,14 +39,6 @@ This is a paragraph with a bold word, an italic one, and a [link to Google](http
 ###### Header 6
 ```
 
-```html
-<ul class="asdf">
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-```
-
 > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
 ```markdown

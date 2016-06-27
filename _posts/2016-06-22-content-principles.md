@@ -3,6 +3,7 @@ layout: post
 title:  "Content Principles"
 date:   2016-06-22 11:44:39 -0500
 intro: "Our five core principles."
+section: content
 categories: content
 ---
 ### 1. Start with user needs.

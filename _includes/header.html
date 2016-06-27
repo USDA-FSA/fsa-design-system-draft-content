@@ -1,39 +1,7 @@
+<a class="skipnav" href="#main-content">Skip to main content</a>
 <header>
-  <!-- <div class="usa-disclaimer docs__disclaimer">
-    <div class="docs__disclaimer__bd">
-      <span class="usa-disclaimer-official">
-        <img class="usa-flag_icon" alt="US flag signifying that this is a United States Federal Government website" src="{{site.baseurl}}/img/us_flag_small.png">
-        An official website of the United States Government
-      </span>
-      <span class="usa-disclaimer-stage docs__disclaimer__stage docs__disclaimer__stage--prototype">
-        <strong>PROTOTYPE</strong> Not ready for Production
-      </span>
-    </div>
-  </div> -->
+  {% include disclaimer.html %}
   <div class="pb-header">
-    <!--
-    <section class="docs__section docs__intro">
-      <nav class="docs__nav">
-        <ul class="docs__primary-nav fsa-m-b--xxs">
-        {% for section in site.sections %}
-        <li class="docs__primary-nav-item">
-          <a class="docs__primary-nav-link" href="{{ section.url | prepend: site.baseurl }}">{{ section.text }}</a>
-        </li>
-        {% endfor %}
-        </ul>
-      </nav>
-    </section>
-    -->
-    <nav>
-      <div class="pb-nav">
-        <ul class="pb-nav__list">
-          {% for section in site.sections %}
-          <li class="pb-nav__list-item">
-            <a class="pb-nav__link" href="{{ section.url | prepend: site.baseurl }}">{{ section.text }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </nav>
+    {% include nav-global.html %}
   </div>
 </header>

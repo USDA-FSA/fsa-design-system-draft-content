@@ -15,9 +15,20 @@
   }
 
   &__list-item {
+
     @include reset-li();
     display: inline-block;
     margin-right: $size-default;
+
+    &--active {
+      font-weight: bold;
+    }
+
+    &--first {
+      .pb-home & {
+        font-weight: bold; // TODO: this is a massive hack. Ask me sometime why
+      }
+    }
 
     &:last-child {
       margin-right: 0;

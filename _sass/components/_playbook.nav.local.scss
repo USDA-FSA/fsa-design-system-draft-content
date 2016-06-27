@@ -16,6 +16,10 @@
 
     @include reset-li();
 
+    &--active {
+      font-weight: bold;
+    }
+
   }
 
   &__link {

@@ -1,7 +1,15 @@
 .pb-nav-local {
 
   &__list {
+
     @include reset-ul();
+    margin-bottom: $size-large;
+
+    @include breakpoint(MML) {
+      border-top: 1px solid $color-fsa-tertiary-200;
+      margin-top: $size-small;
+    }
+
   }
 
   &__list-item {
@@ -12,11 +20,12 @@
 
   &__link {
 
-    @include font-size(1);
     color: $color-fsa-link;
+    display: block;
 
     @include breakpoint(MML) {
-      @include font-size(3);
+      border-bottom: 1px solid $color-fsa-tertiary-200;
+      padding: $size-small 0;
     }
 
     &:visited {

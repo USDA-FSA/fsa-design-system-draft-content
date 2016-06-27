@@ -3,6 +3,7 @@ layout: post
 title:  "Checklist"
 date:   2016-06-21 10:23:36 -0500
 intro: "This checklist helps developers identify potential accessibility issues affecting their websites or applications. It's broken down into three sections of decreasing importance: <strong>A</strong>, <strong>B</strong> and <strong>C</strong>. Please check and address these issues in the order in which they appear."
+section: accessibility
 categories: accessibility
 ---
 

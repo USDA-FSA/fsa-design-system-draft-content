@@ -3,9 +3,14 @@
  */
 .highlight {
 
+    padding: 0;
+
     pre,
     code {
       color: #000;
+      padding: $size-default;
+      margin: 0;
+      background-color: $color-fsa-tertiary-100;
     }
 
     .highlighter-rouge & {

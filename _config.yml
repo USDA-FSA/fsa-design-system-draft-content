@@ -21,6 +21,7 @@ url: "https://usda-fsa.github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb-lorem
 github_username:  usda-fsa
 permalink: none
+github_repository_url: https://github.com/USDA-FSA/fsa-playbook-wip
 
 ################################################################################
 # Navigation: effectively the top-level navigation

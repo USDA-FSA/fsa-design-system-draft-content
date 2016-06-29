@@ -39,7 +39,6 @@ If you have any questions about accessibility, 508, or would like help, please r
 
 ### Sites/Tutorials
 
-* [Checklist](checklist.html)
 * [WAI Tutorials](http://www.w3.org/WAI/tutorials/)
 * [Simply Accessible](http://simplyaccessible.com/archives/) A great blog and resource with articles about modern accessibility.
 * [Creating Accessible PDFs](http://www.section508.va.gov/support/tutorials/pdf/index.asp)

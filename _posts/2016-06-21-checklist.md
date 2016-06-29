@@ -2,18 +2,18 @@
 layout: post
 title:  "Checklist"
 date:   2016-06-21 10:23:36 -0500
-intro: "This checklist helps developers identify potential accessibility issues affecting their websites or applications. It's broken down into three sections of decreasing importance: <strong>A</strong>, <strong>B</strong> and <strong>C</strong>. Please check and address these issues in the order in which they appear."
+intro: "This checklist helps developers identify potential accessibility issues affecting their websites or applications. It's divided into three sections of decreasing importance: <strong>A</strong>, <strong>B</strong>, and <strong>C</strong>. For workflow priority based on issue severity, please check and address these issues in the order in which they appear."
 section: accessibility
 categories: accessibility
 ---
 
-For more detail on accessibilty standards, please see [WCAG2.0 AA](https://www.w3.org/TR/WCAG20/)
+For more detail on accessibility standards, please see [WCAG2.0 AA](https://www.w3.org/TR/WCAG20/).
 
- * **A** - Critical issues that will cause serious problems and/or stop most users of assitive technology from using the site
- * **B** - Issues that may cause problems or increased frustration for certain users
- * **C** - Minor issues that will cause problems or frustration for a small number of users
+ * **A** - Critical issues that will cause serious problems and/or stop most users of assistive technology from using the site.
+ * **B** - Less critical issues that may cause problems or increased frustration for certain users.
+ * **C** - Minor issues that will cause problems or frustration for a small number of users.
 
-It is important to note, while B and C are noted as less critical, they are still required to be truly 508 compliant. This checklist should be used as a reference for development and is not a substitute for compliance checks by a section 508 coordinator.
+It is important to note, while B and C are noted as less critical, they are still required to be truly Section 508 compliant. This checklist should be used as a reference for development and is not a substitute for compliance checks by a Section 508 coordinator.
 
 ##  A - Critical
 

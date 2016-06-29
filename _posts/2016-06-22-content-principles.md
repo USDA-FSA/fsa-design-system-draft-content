@@ -8,7 +8,7 @@ categories: content
 ---
 ### 1. Start with user needs.
 
-* Write in a way that suits the situation. Ask yourself: Who is going to read this? What do they need to know? How might they be feeling?
+* Write in a way that suits the situation. Ask yourself: who is going to read this? What do they need to know? How might they be feeling?
 * Help people find the information they need quickly and easily. Guide them through the process.
 
 ### 2. Do the hard work to make it simple.
@@ -30,7 +30,7 @@ categories: content
 ### 5. Start small and iterate.
 
 * Make sure your content works for users. Don’t be afraid to scrap what’s there and start over.
-* Write a draft, test it out, gather feedback, and keep refining.
+* Write a draft, test it with real users, gather feedback, and keep refining.
 
 ---
 

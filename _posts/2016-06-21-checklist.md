@@ -7,11 +7,11 @@ section: accessibility
 categories: accessibility
 ---
 
-For more detail on accessibilty standards, please see [WCAG2.0 AA](https://www.w3.org/TR/WCAG20/)
+For more detail on accessibility standards, please see [WCAG2.0 AA](https://www.w3.org/TR/WCAG20/)
 
- * **A** - Critical issues that will cause serious problems and/or stop most users of assitive technology from using the site
- * **B** - Issues that may cause problems or increased frustration for certain users
- * **C** - Minor issues that will cause problems or frustration for a small number of users
+ * **A** - Critical issues that will cause serious problems and/or stop most users of assitive technology from using the site.
+ * **B** - Issues that may cause problems or increased frustration for certain users.
+ * **C** - Minor issues that will cause problems or frustration for a small number of users.
 
 It is important to note, while B and C are noted as less critical, they are still required to be truly 508 compliant. This checklist should be used as a reference for development and is not a substitute for compliance checks by a section 508 coordinator.
 

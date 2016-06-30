@@ -13,6 +13,10 @@ layout: default
 
       <h1 class="pb-page-title">{{ page.title }}</h1>
 
+      {% if page.intro %}
+      <p class="fsa-text--lead">{{ page.intro }}</p>
+      {% endif %}
+
       {{ content }}
 
     </article>

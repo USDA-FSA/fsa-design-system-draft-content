@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Forms"
-date:   2016-06-28 10:23:36 -0500
+date:   2016-06-29 10:23:36 -0500
 intro: "How we work with forms."
 section: accessibility
 categories: accessibility
@@ -13,7 +13,7 @@ To make forms accessible, each form element should be associated with its instru
 
 1. Identify each form element.
 2. Find all instructions associated with each element.
-  * __If a form element isn't programatically associated with ALL instructions, this is a failure.__
+  * __If a form element isn't programmatically associated with ALL instructions, this is a failure.__
 3. Ensure all field elements are accessible via the keyboard.
   * __If the form cannot be filled out with just a keyboard, this is a failure.__
 4. Check for title tags.

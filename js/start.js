@@ -1,3 +1,5 @@
 'use strict';
 
-var $ = window.jQuery = require('jquery');
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;

@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "jquery": "^2.2.2",
-    "fsa-style": "git://github.com/USDA-FSA/fsa-style.git#73979ef"
+    "fsa-style": "git://github.com/USDA-FSA/fsa-style.git#master"
   },
   "scripts": {
     "install-dep": "bundle install && npm install",
